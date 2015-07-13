@@ -6,3 +6,13 @@ body {
   color: #000; /* Fallback for older browsers */
   color: rgba(0, 0, 0, 0.8);
 }
+
+.ng-shield {
+  background: transparent url("/img/ng-shield-large.png") no-repeat scroll 0px 0px;
+  float: right;
+  visibility: hidden;
+  height: 200px;
+  width: 200px;
+}
+
+.active .ng-shield { visibility: visible; }
