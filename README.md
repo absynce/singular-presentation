@@ -1,2 +1,3 @@
-# singular-presentation
-Angular 1.x Demo Application Presentation
+# Singular Presentation
+
+Angular 1.x demo application presentation made with [impress.js](https://github.com/impress/impress.js/).

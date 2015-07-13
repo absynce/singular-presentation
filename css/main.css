@@ -1,0 +1,8 @@
+body {
+  background: rgba(134, 216, 181, 100);
+
+  background:         radial-gradient(rgb(134, 216, 181), rgb(117, 190, 159));
+
+  color: #000; /* Fallback for older browsers */
+  color: rgba(0, 0, 0, 0.8);
+}

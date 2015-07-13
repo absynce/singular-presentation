@@ -1,0 +1,27 @@
+{
+  "name": "singular-presentation",
+  "version": "0.0.0",
+  "homepage": "https://github.com/absynce/singular-presentation",
+  "authors": [
+    "Jared M. Smith <absynce@gmail.com>"
+  ],
+  "description": "Angular 1.x vs Angular 2 demo presentation.",
+  "main": "index.html",
+  "keywords": [
+    "impress.js",
+    "angular",
+    "ng",
+    "demo"
+  ],
+  "license": "ISC",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "impress.js": "~0.5.3"
+  }
+}
