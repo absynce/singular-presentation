@@ -7,6 +7,10 @@ body {
   color: rgba(0, 0, 0, 0.8);
 }
 
+dt {
+  font-weight: bold;
+}
+
 .ng-shield {
   background: transparent url("/img/ng-shield-large.png") no-repeat scroll 0px 0px;
   float: right;
