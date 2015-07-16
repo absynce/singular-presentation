@@ -7,6 +7,8 @@ body {
   color: rgba(0, 0, 0, 0.8);
 }
 
+h2 { font-size: 100px; }
+
 dt {
   font-weight: bold;
 }
@@ -20,3 +22,20 @@ dt {
 }
 
 .active .ng-shield { visibility: visible; }
+
+/* hint for my prez */
+.impress-on-title .hint {
+    opacity: 1;
+
+    -webkit-transition: opacity 1s 5s, -webkit-transform 0.5s;
+    -moz-transition:    opacity 1s 5s,    -moz-transform 0.5s;
+    -ms-transition:     opacity 1s 5s,     -ms-transform 0.5s;
+    -o-transition:      opacity 1s 5s,      -o-transform 0.5s;
+    transition:         opacity 1s 5s,         transform 0.5s;
+
+    -webkit-transform: translateY(0px);
+    -moz-transform:    translateY(0px);
+    -ms-transform:     translateY(0px);
+    -o-transform:      translateY(0px);
+    transform:         translateY(0px);
+}
