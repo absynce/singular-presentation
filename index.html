@@ -30,52 +30,74 @@
   </div>
 
   <div id="impress">
-    <div id="title" class="step" data-x="-1000" data-y="-1000" data-scale="3">
+<div id="title" class="step">
       <h1>Angular 1.x</h1>
       <span class="versus">vs.</span>
       <h1>Angular 2</h1>
       <p>by <span class="author">Jared M. Smith</span></p>
     </div>
 
-    <div id="static" class="step" data-x="-1150" data-y="0" data-scale="3">
+    <div id="static" class="step" data-x="2850" data-y="0" data-scale="3">
       <p>Static pages are boring. Like this slide, they provide little value.</p>
     </div>
 
-    <div id="angularized" class="step" data-x="-1150" data-y="600" data-scale="3">
+    <div id="angularized" class="step" data-x="2850" data-y="600" data-scale="3">
       <div class="ng-shield"></div>
       <p>If you're here you know the value of dynamic client-side Angularized
         code.</p>
     </div>
 
-    <div id="angular1.x-overview" class="step" data-x="-1150" data-y="1200" data-scale="3">
+    <div id="angular1.x-overview" class="step" data-x="-1150" data-y="1200"  data-z="-1000" data-rotate-y="-30" data-scale="3">
       <p>Angular 1.x requires only <span class="javascript">JavaScript</span> and HTML.
     </div>
 
-    <div id="angular1.x-directives" class="step" data-x="-1150" data-y="2200" data-scale="3">
-      <p><dl><dt class="big"><em>Directives</em></dt><dd>are attributes associated to HTML tags which tell Angular what to do.</dd>
+    <div id="angular2-overview" class="step" data-x="7000" data-y="1200" data-z="-1000" data-rotate-y="30" data-scale="3">
+      <p>Angular 2 requires only <span class="javascript">JavaScript</span> and HTML...but can also be written in ES6, <span class="typescript">TypeScript</span>, and Dart.</p>
+    </div>
+
+    <!-- singular@initNg1.x -->
+    <div id="angular1.x-directives" class="step" data-x="-1150" data-y="2200" data-z="-1000" data-rotate-y="-30" data-scale="3">
+      <p><dl>
+        <dt class="big"><em>Angular 1.x Directives</em></dt>
+        <dd>are attributes associated to HTML tags which tell Angular 1.x what to do.</dd>
       </dl></p>
-      <h3>Example directive:</h3>
+      <h3>Example Angular 1.x directive:</h3>
       <pre><code class="html">&lt;html ng-app="singular"&gt;</code></pre>
     </div>
 
-    <div id="angular1.x-mvc" class="step" data-x="-1150" data-y="3300" data-scale="3">
+    <div id="angular2-directives" class="step" data-x="7000" data-y="2200" data-z="-1000" data-rotate-y="90" data-scale="3">
+      <p><dl>
+        <dt class="big"><em>Angular 2 Directives</em></dt>
+        <dd>are used within <em>templates</em>.</dd>
+      </dl></p>
+      <h3>Example Angular 2 directive:</h3>
+      <pre><code class="html">&lt;li *ng-for="#lang of languages;"&gt;{{ lang }}&lt;/li&gt;</code></pre>
+    </div>
+
+    <div id="angular1.x-mvc" class="step" data-x="-1150" data-y="3300" data-z="-1000" data-rotate-y="-90" data-scale="3">
       <p>Think of Angular <em>$scope</em>, <em>template</em>, and <em>controller</em> as model, view, and controller in the MVC pattern, respectively.</p>
     </div>
 
-    <div id="angular1.x-bindings" class="step" data-x="-1150" data-y="3300" data-z="-800" data-rotate-y="90" data-scale="3">
+    <!-- singular@profile -->
+    <div id="angular2-alpha" class="step" data-x="7000" data-y="3300" data-z="-1000" data-rotate-y="90" data-scale="3">
+      <h2>&alpha;</h2>
+      <p>Angular 2 is still &alpha;lpha.</p>
+      <img src="/img/date-pipe-commit.png" />
+    </div>
+
+    <!-- singular@branch -->
+    <!-- Mention one-way bindings are implicity, not defined explicitly in Angular. -->
+    <div id="angular1.x-bindings" class="step" data-x="1150" data-y="3300" data-z="-1000" data-rotate-y="0" data-scale="3">
       <h2>One-way vs. two-way bindings</h2>
       <p>Two-way bindings are useful, but have some performance concerns.</p>
       <p>One-way bindings <a href="http://victorsavkin.com/post/114168430846/two-phases-of-angular-2-applications">are recommended</a> for easing migration to Angular 2.
     </div>
 
 
-    <div id="angular2-alpha" class="step" data-x="600" data-y="-1000" data-scale="3">
-      <h2>&alpha;</h2>
-      <p>Angular 2 is still &alpha;lpha.</p>
-      <img src="/img/date-pipe-commit.png" />
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
     </div>
 
-    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    <div id="angular1.x-overview" class="step" data-x="-1150" data-y="2200" data-z="-1000" data-rotate-y="-90" data-scale="10">
     </div>
   </div>
 
@@ -89,6 +111,5 @@
   </script>
 
   <script src="bower_components/impress.js/js/impress.js"></script>
-  <script>impress().init();</script>
 </body>
 </html>
