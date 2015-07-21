@@ -41,22 +41,27 @@
       <p>Static pages are boring. Like this slide, they provide little value.</p>
     </div>
 
-    <div id="angularized" class="step" data-x="2850" data-y="600" data-scale="3">
+    <div id="angularized" class="step">
       <div class="ng-shield"></div>
       <p>If you're here you know the value of dynamic client-side Angularized
         code.</p>
     </div>
 
     <div id="angular1x-tech" class="step">
+      <div class="ng1x-tech-logos">
+        <img class="js-logo" src="/img/badge-js.png" />
+        <img class="html5-logo" src="/img/badge-html5.svg" />
+      </div>
       <p>Angular 1.x requires only <span class="javascript">JavaScript</span> and HTML.
     </div>
 
-    <div id="angular2-tech" class="step" data-x="7000" data-y="1200" data-z="-1000" data-rotate-y="30" data-scale="3">
+    <div id="angular2-tech" class="step">
       <p>Angular 2 requires only <span class="javascript">JavaScript</span> and HTML...but can also be written in ES6, <span class="typescript">TypeScript</span>, and Dart.</p>
     </div>
 
+    <!-- Should the directives be moved after mvc and ng2-alpha for proper branch order? -->
     <!-- singular@initNg1.x -->
-    <div id="angular1.x-directives" class="step" data-x="-1150" data-y="2200" data-z="-1000" data-rotate-y="-30" data-scale="3">
+    <div id="angular1x-directives" class="step">
       <p><dl>
         <dt class="big"><em>Angular 1.x Directives</em></dt>
         <dd>are attributes associated to HTML tags which tell Angular 1.x what to do.</dd>
@@ -65,7 +70,8 @@
       <pre><code class="html">&lt;html ng-app="singular"&gt;</code></pre>
     </div>
 
-    <div id="angular2-directives" class="step" data-x="7000" data-y="2200" data-z="-1000" data-rotate-y="90" data-scale="3">
+    <!-- singular2@profile-languages -->
+    <div id="angular2-directives" class="step">
       <p><dl>
         <dt class="big"><em>Angular 2 Directives</em></dt>
         <dd>are used within <em>templates</em>.</dd>
@@ -74,12 +80,18 @@
       <pre><code class="html">&lt;li *ng-for="#lang of languages;"&gt;{{ lang }}&lt;/li&gt;</code></pre>
     </div>
 
-    <div id="angular1.x-mvc" class="step" data-x="-1150" data-y="3300" data-z="-1000" data-rotate-y="-90" data-scale="3">
-      <p>Think of Angular <em>$scope</em>, <em>template</em>, and <em>controller</em> as model, view, and controller in the MVC pattern, respectively.</p>
+    <!-- singular@profile -->
+    <div id="angular1x-mvc" class="step">
+      <p>Think of Angular 1.x <em>$scope</em>, <em>template</em>, and <em>controller</em> as model, view, and controller in the MVC pattern, respectively.</p>
+    </div>
+
+    <!-- singular2@profile -->
+    <div id="angular2-mvc" class="step">
+      <p>Angular 2 Component <em>class properties</em>, <em>view</em>, and <em>class functions</em> are similar to model, view, and controller in the MVC pattern, respectively.</p>
     </div>
 
     <!-- singular@profile -->
-    <div id="angular2-alpha" class="step" data-x="7000" data-y="3300" data-z="-1000" data-rotate-y="90" data-scale="3">
+    <div id="angular2-alpha" class="step">
       <h2>&alpha;</h2>
       <p>Angular 2 is still &alpha;lpha.</p>
       <img src="/img/date-pipe-commit.png" />
@@ -87,7 +99,7 @@
 
     <!-- singular@branch -->
     <!-- Mention one-way bindings are implicity, not defined explicitly in Angular. -->
-    <div id="angular1.x-bindings" class="step" data-x="1150" data-y="3300" data-z="-1000" data-rotate-y="0" data-scale="3">
+    <div id="angular1x-bindings" class="step">
       <h2>One-way vs. two-way bindings</h2>
       <p>Two-way bindings are useful, but have some performance concerns.</p>
       <p>One-way bindings <a href="http://victorsavkin.com/post/114168430846/two-phases-of-angular-2-applications">are recommended</a> for easing migration to Angular 2.
@@ -97,7 +109,7 @@
     <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
     </div>
 
-    <div id="angular1.x-overview" class="step" data-x="-1150" data-y="2200" data-z="-1000" data-rotate-y="-90" data-scale="10">
+    <div id="angular1.x-overview" class="step" data-x="-1150" data-y="2200" data-z="-1000" data-rotate-y="-30" data-scale="10">
     </div>
   </div>
 
