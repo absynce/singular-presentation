@@ -44,5 +44,10 @@ dt {
 #angular2-directives code { font-size: 0.78em; }
 
 .ng1x-tech-logos { width: 450px; margin: 0 auto; }
-.js-logo { background-color: #F0DB4F; }
-.html5-logo { height: 200px; }
+.js-logo { background-color: #F0DB4F; margin-right: 25px; }
+.html5-logo { height: 200px; margin-left: 25px; }
+
+.ng2-tech-logos img {
+	height: 130px;
+	margin: 12.5px;
+}
