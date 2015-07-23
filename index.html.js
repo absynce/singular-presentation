@@ -27,16 +27,16 @@ function initPresentation() {
 
   var options = {
     steps: {
-      'title':               { x: front.x, y: -1000, z: front.z, rotateX: front.rotate.x, rotateY: front.rotate.y, rotateZ: front.rotate.z, scale: front.scale },
+      'title':               { x: front.x, y: -1200, z: front.z, rotateX: front.rotate.x, rotateY: front.rotate.y, rotateZ: front.rotate.z, scale: front.scale },
       'static':              { x: front.x, y: 0,     z: front.z, rotateX: front.rotate.x, rotateY: front.rotate.y, rotateZ: front.rotate.z, scale: front.scale },
-      'angularized':         { x: front.x, y: 600,   z: front.z, rotateX: front.rotate.x, rotateY: front.rotate.y, rotateZ: front.rotate.z, scale: front.scale },
+      'angularized':         { x: front.x, y: 900,   z: front.z, rotateX: front.rotate.x, rotateY: front.rotate.y, rotateZ: front.rotate.z, scale: front.scale },
       'angular1x-tech':      { x: ng1x.x,  y: 900,   z: ng1x.z,  rotateX: ng1x.rotate.x,  rotateY: ng1x.rotate.y,  rotateZ: ng1x.rotate.z,  scale: ng1x.scale  },
       'angular2-tech':       { x: ng2.x,   y: 1000,  z: ng2.z,   rotateX: ng2.rotate.x,   rotateY: ng2.rotate.y,   rotateZ: ng2.rotate.z,   scale: ng2.scale  },
-      'angular1x-directives':{ x: ng1x.x,  y: 2200,  z: ng1x.z,  rotateX: ng1x.rotate.x,  rotateY: ng1x.rotate.y,  rotateZ: ng1x.rotate.z,  scale: ng1x.scale  },
-      'angular2-directives': { x: ng2.x,   y: 2200,  z: ng2.z,   rotateX: ng2.rotate.x,   rotateY: ng2.rotate.y,   rotateZ: ng2.rotate.z,   scale: ng2.scale  },
-      'angular1x-mvc':       { x: ng1x.x,  y: 3300,  z: ng1x.z,  rotateX: ng1x.rotate.x,  rotateY: ng1x.rotate.y,  rotateZ: ng1x.rotate.z,  scale: ng1x.scale  },
-      'angular2-mvc':        { x: ng2.x,   y: 3300,  z: ng2.z,   rotateX: ng2.rotate.x,   rotateY: ng2.rotate.y,   rotateZ: ng2.rotate.z,   scale: ng2.scale  },
-      'angular1x-bindings':  { x: ng1x.x,  y: 4700,  z: ng1x.z,  rotateX: ng1x.rotate.x,  rotateY: ng1x.rotate.y,  rotateZ: ng1x.rotate.z,  scale: ng1x.scale  },
+      'angular1x-mvc':       { x: ng1x.x,  y: 2400,  z: ng1x.z,  rotateX: ng1x.rotate.x,  rotateY: ng1x.rotate.y,  rotateZ: ng1x.rotate.z,  scale: ng1x.scale  },
+      'angular2-mvc':        { x: ng2.x,   y: 2400,  z: ng2.z,   rotateX: ng2.rotate.x,   rotateY: ng2.rotate.y,   rotateZ: ng2.rotate.z,   scale: ng2.scale  },
+      'angular1x-directives':{ x: ng1x.x,  y: 3800,  z: ng1x.z,  rotateX: ng1x.rotate.x,  rotateY: ng1x.rotate.y,  rotateZ: ng1x.rotate.z,  scale: ng1x.scale  },
+      'angular2-directives': { x: ng2.x,   y: 3800,  z: ng2.z,   rotateX: ng2.rotate.x,   rotateY: ng2.rotate.y,   rotateZ: ng2.rotate.z,   scale: ng2.scale  },
+      'angular1x-bindings':  { x: ng1x.x,  y: 5500,  z: ng1x.z,  rotateX: ng1x.rotate.x,  rotateY: ng1x.rotate.y,  rotateZ: ng1x.rotate.z,  scale: ng1x.scale  },
       'angular2-alpha':      { x: ng2.x,   y: 1200,  z: -8000,   rotateX: ng2.rotate.x,   rotateY: 210,            rotateZ: ng2.rotate.z,   scale: ng2.scale  },
     }
   }
@@ -59,14 +59,29 @@ function initData(options) {
 }
 
 function initEvents() {
-  initEscOnOverview();
+  initOverviewOnEsc();
+  initRefBranchOnShiftHold();
 }
 
-function initEscOnOverview() {
+function initOverviewOnEsc() {
   // Press ESC to go to overview
   $('body').keyup(function (e) {
     if (e.keyCode == 27) {
       impress().goto('overview');
+    }
+  });
+}
+
+function initRefBranchOnShiftHold() {
+  // Hold shift to show ref branch.
+  $('body').keydown(function (e) {
+    if (e.keyCode == 16) {
+      document.querySelector('.step.active .ref-branch').style.opacity = 1;
+    }
+  });
+  $('body').keyup(function (e) {
+    if (e.keyCode == 16) {
+      document.querySelector('.step.active .ref-branch').style.opacity = 0;
     }
   });
 }
