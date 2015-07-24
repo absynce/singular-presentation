@@ -36,8 +36,12 @@ function initPresentation() {
       'angular2-mvc':        { x: ng2.x,   y: 2400,  z: ng2.z,   rotateX: ng2.rotate.x,   rotateY: ng2.rotate.y,   rotateZ: ng2.rotate.z,   scale: ng2.scale  },
       'angular1x-directives':{ x: ng1x.x,  y: 3800,  z: ng1x.z,  rotateX: ng1x.rotate.x,  rotateY: ng1x.rotate.y,  rotateZ: ng1x.rotate.z,  scale: ng1x.scale  },
       'angular2-directives': { x: ng2.x,   y: 3800,  z: ng2.z,   rotateX: ng2.rotate.x,   rotateY: ng2.rotate.y,   rotateZ: ng2.rotate.z,   scale: ng2.scale  },
-      'angular1x-bindings':  { x: ng1x.x,  y: 5500,  z: ng1x.z,  rotateX: ng1x.rotate.x,  rotateY: ng1x.rotate.y,  rotateZ: ng1x.rotate.z,  scale: ng1x.scale  },
+      'angular1x-ng-repeat': { x: ng1x.x,  y: 5500,  z: ng1x.z,  rotateX: ng1x.rotate.x,  rotateY: ng1x.rotate.y,  rotateZ: ng1x.rotate.z,  scale: ng1x.scale  },
+      'angular2-ng-for':     { x: ng2.x,   y: 5500,  z: ng2.z,   rotateX: ng2.rotate.x,   rotateY: ng2.rotate.y,   rotateZ: ng2.rotate.z,   scale: ng2.scale  },
+      'angular1x-bindings':  { x: ng1x.x,  y: 1200,  z: -8000,   rotateX: ng1x.rotate.x,  rotateY: 210,            rotateZ: ng1x.rotate.z,  scale: ng1x.scale  },
       'angular2-alpha':      { x: ng2.x,   y: 1200,  z: -8000,   rotateX: ng2.rotate.x,   rotateY: 210,            rotateZ: ng2.rotate.z,   scale: ng2.scale  },
+      'angular1x-overview':  { x: ng1x.x,  y: 3000,  z: -1000,   rotateX: ng1x.rotate.x,  rotateY: ng1x.rotate.y,  rotateZ: ng1x.rotate.z,  scale: 10  },
+      'angular2-overview':   { x: ng2.x,   y: 3000,  z: -1000,   rotateX: ng2.rotate.x,   rotateY: ng2.rotate.y,   rotateZ: ng2.rotate.z,   scale: 10  },
     }
   }
   initData(options);

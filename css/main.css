@@ -62,7 +62,11 @@ dt {
     transform:         translateY(0px);
 }
 
+#angular2-alpha a { background: none; }
+
 #angular2-directives code { font-size: 0.78em; }
+#angular1x-ng-repeat code { font-size: 0.66em; }
+#angular2-ng-for     code { font-size: 0.66em; }
 
 .ng1x-tech-logos { width: 450px; margin: 0 auto; }
 .js-logo { background-color: #F0DB4F; margin-right: 25px; }
