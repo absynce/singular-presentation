@@ -1,7 +1,7 @@
 body {
   background: rgba(134, 216, 181, 100);
 
-  background:         radial-gradient(rgb(134, 216, 181), rgb(117, 190, 159));
+  background: radial-gradient(rgb(134, 216, 181), rgb(117, 190, 159));
 
   color: #000; /* Fallback for older browsers */
   color: rgba(0, 0, 0, 0.8);
@@ -15,6 +15,9 @@ dt {
 }
 
 .step { position: relative; }
+
+/* Show only angular 1.x steps when on Angular 1.x overview and same for Angular 2. */
+.impress-on-angular1x-overview [id^=angular1x-].step, .impress-on-angular2-overview [id^=angular2-].step { opacity: 1; cursor: pointer; }
 
 .ref-branch {
   color: rgba(0, 0, 0, 0.7);
@@ -76,3 +79,7 @@ dt {
 	height: 130px;
 	margin: 12.5px;
 }
+
+#next-steps li, #check-the-code li { font-size: .7em; }
+
+#props ul { list-style: circle; padding-left: 50px; }

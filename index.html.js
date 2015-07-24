@@ -40,6 +40,10 @@ function initPresentation() {
       'angular2-ng-for':     { x: ng2.x,   y: 5500,  z: ng2.z,   rotateX: ng2.rotate.x,   rotateY: ng2.rotate.y,   rotateZ: ng2.rotate.z,   scale: ng2.scale  },
       'angular1x-bindings':  { x: ng1x.x,  y: 1200,  z: -8000,   rotateX: ng1x.rotate.x,  rotateY: 210,            rotateZ: ng1x.rotate.z,  scale: ng1x.scale  },
       'angular2-alpha':      { x: ng2.x,   y: 1200,  z: -8000,   rotateX: ng2.rotate.x,   rotateY: 210,            rotateZ: ng2.rotate.z,   scale: ng2.scale  },
+      'project-structure':   { x: 1000,    y: -3200, z: -4000,   rotateX: 90,             rotateY: 0,              rotateZ: 0,              scale: 3  },
+      'next-steps':          { x: front.x, y: 3000,  z: -10000,  rotateX: front.rotate.x, rotateY: front.rotate.y, rotateZ: front.rotate.z, scale: front.scale },
+      'check-the-code':      { x: front.x, y: 4200,  z: -10000,  rotateX: front.rotate.x, rotateY: front.rotate.y, rotateZ: front.rotate.z, scale: front.scale },
+      'props':               { x: front.x, y: 5600,  z: -10000,  rotateX: front.rotate.x, rotateY: front.rotate.y, rotateZ: front.rotate.z, scale: front.scale },
       'angular1x-overview':  { x: ng1x.x,  y: 3000,  z: -1000,   rotateX: ng1x.rotate.x,  rotateY: ng1x.rotate.y,  rotateZ: ng1x.rotate.z,  scale: 10  },
       'angular2-overview':   { x: ng2.x,   y: 3000,  z: -1000,   rotateX: ng2.rotate.x,   rotateY: ng2.rotate.y,   rotateZ: ng2.rotate.z,   scale: 10  },
     }

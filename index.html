@@ -66,7 +66,7 @@
         <img class="ts-logo" src="/img/badge-ts.png" />
         <img class="dart-logo" src="/img/badge-dart.svg" />
       </div>
-      <p>Angular 2 requires only <span class="javascript">JavaScript</span> and HTML...but can also be written in ES6, <span class="typescript">TypeScript</span>, and Dart.</p>
+      <p>Angular 2 requires only <span class="javascript">JavaScript</span> and HTML...but can also be written in ES6, <a target="_blank" href="http://basarat.gitbooks.io/typescript/content/docs/why-typescript.html"><span class="typescript">TypeScript</span></a>, and Dart.</p>
       <div class="ref-branch">singular2@initNg2</div>
     </div>
 
@@ -129,8 +129,10 @@
         <dd>is a directive that binds a template over items in a collection.</dd>
       </dl></p>
       <h3>Example Angular 2 ngFor:</h3>
+      <pre><code class="html">&lt;li *ng-for="#lang of languages"&gt;{{ lang }}&lt;/li&gt;</code></pre>
+      <p>or</p>
       <pre><code class="html">&lt;li template="ng-for #lang of languages"&gt;{{ lang }}&lt;/li&gt;</code></pre>
-      <div class="ref-branch">singular2@profile-languages</div>
+      <div class="ref-branch">singular2@profile-languages<br />singular2@profile-languages-diff-syntax</div>
     </div>
 
     <!-- singular@branch -->
@@ -139,6 +141,43 @@
       <h2>One-way vs. two-way bindings</h2>
       <p>Two-way bindings are useful, but have some performance concerns.</p>
       <p>One-way bindings <a href="http://victorsavkin.com/post/114168430846/two-phases-of-angular-2-applications">are recommended</a> for easing migration to Angular 2.
+      <div class="ref-branch">No branch.</div>
+    </div>
+
+    <div id="project-structure" class="step">
+      <h3>Project structure</h3>
+      <p>The project structure follows <a target="_blank" href="https://scotch.io/tutorials/angularjs-best-practices-directory-structure">best practices</a> by Adnan Kukic and <a target="_blank" href="http://cliffmeyers.com/blog/2013/4/21/code-organization-angularjs-javascript">organization suggestions</a> by Cliff Meyers.
+      <div class="ref-branch">singular@project-structure<br />singular2@project-structure</div>
+    </div>
+
+    <div id="next-steps" class="step">
+      <h2>Next steps</h2>
+      <h3>More research:</h3>
+      <!--<p>I'd like to expand this to include the following topics.</p>-->
+      <ul>
+        <li>Routing - using <a href="http://blog.thoughtram.io/angularjs/2015/02/19/futuristic-routing-in-angular.html">angular-new-router</a></li>
+        <li>Testing</li>
+        <li>Internationalization (i18n) - <a href="http://blog.trifork.com/2014/04/10/internationalization-with-angularjs/">custom</a> or via plug-in</li>
+      </ul>
+    </div>
+
+    <div id="check-the-code" class="step">
+      <h3>Check out the code on Github!</h3>
+      <ul>
+        <li><a href="https://github.com/absynce/singular">absynce/singular</a> - Angular 1.x App</li>
+        <li><a href="https://github.com/absynce/singular2">absynce/singular2</a> - Angular 2 App</li>
+        <li><a href="https://github.com/absynce/singular-presentation">absynce/singular-presentation</a> - Angular 1.x vs Angular 2 Presentation</li>
+      </ul>
+    </div>
+
+    <div id="props" class="step">
+      <p>Credit to the following people and resources:</p>
+      <ul>
+        <li><a href="https://github.com/bartaz">@bartaz</a> for <a href="https://github.com/impress/impress.js">impress.js</a></li>
+        <li>The <a href="https://github.com/orgs/angular/people">ng team</a> for <a href="https://angularjs.org/"</a>ng 1</a> and <a href="https://angularjs.org/">ng 2</a></li>
+        <li><a hrer="http://learn-angular.org/">Learn Angular</a></li>
+        <li><a href="https://www.codecademy.com/en/courses/learn-angularjs">Codecademy AngularJS course</a></li>
+      </ul>
     </div>
 
     <div id="angular1x-overview" class="step"></div>
