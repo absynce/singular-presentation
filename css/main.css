@@ -34,7 +34,7 @@ dt {
 }
 
 .ng-shield {
-  background: transparent url("/img/ng-shield-large.png") no-repeat scroll 0px 0px;
+  background: transparent url("../img/ng-shield-large.png") no-repeat scroll 0px 0px;
   float: right;
   opacity: 0;
   height: 200px;
@@ -80,6 +80,6 @@ dt {
 	margin: 12.5px;
 }
 
-#next-steps li, #check-the-code li { font-size: .7em; }
+#props li, #next-steps li, #check-the-code li { font-size: .7em; }
 
-#props ul { list-style: circle; padding-left: 50px; }
+#props ul, #next-steps ul, #check-the-code ul { list-style: circle; padding-left: 50px; }
